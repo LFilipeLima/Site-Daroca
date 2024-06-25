@@ -1,0 +1,348 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'FrmDepto.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.1
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
+    QCursor, QFont, QFontDatabase, QGradient,
+    QIcon, QImage, QKeySequence, QLinearGradient,
+    QPainter, QPalette, QPixmap, QRadialGradient,
+    QTransform)
+from PySide6.QtWidgets import (QApplication, QDoubleSpinBox, QGridLayout, QHeaderView,
+    QLabel, QLineEdit, QMainWindow, QMenu,
+    QMenuBar, QSizePolicy, QSpinBox, QStatusBar,
+    QTabWidget, QTableWidget, QTableWidgetItem, QToolBar,
+    QWidget)
+import recursos_rc
+
+class Ui_FrmDepto(object):
+    def setupUi(self, FrmDepto):
+        if not FrmDepto.objectName():
+            FrmDepto.setObjectName(u"FrmDepto")
+        FrmDepto.resize(772, 542)
+        self.actionConex_o = QAction(FrmDepto)
+        self.actionConex_o.setObjectName(u"actionConex_o")
+        self.actionSair = QAction(FrmDepto)
+        self.actionSair.setObjectName(u"actionSair")
+        self.action_Novo = QAction(FrmDepto)
+        self.action_Novo.setObjectName(u"action_Novo")
+        icon = QIcon()
+        icon.addFile(u":/depto/Add.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Novo.setIcon(icon)
+        self.action_Editar = QAction(FrmDepto)
+        self.action_Editar.setObjectName(u"action_Editar")
+        icon1 = QIcon()
+        icon1.addFile(u":/depto/WINNEXT.BMP", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Editar.setIcon(icon1)
+        self.action_Salvar = QAction(FrmDepto)
+        self.action_Salvar.setObjectName(u"action_Salvar")
+        icon2 = QIcon()
+        icon2.addFile(u":/depto/Save.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Salvar.setIcon(icon2)
+        self.action_Excluir = QAction(FrmDepto)
+        self.action_Excluir.setObjectName(u"action_Excluir")
+        icon3 = QIcon()
+        icon3.addFile(u":/depto/Minus.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Excluir.setIcon(icon3)
+        self.action_Cancelar = QAction(FrmDepto)
+        self.action_Cancelar.setObjectName(u"action_Cancelar")
+        icon4 = QIcon()
+        icon4.addFile(u":/depto/UNDO.BMP", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Cancelar.setIcon(icon4)
+        self.action_Buscar = QAction(FrmDepto)
+        self.action_Buscar.setObjectName(u"action_Buscar")
+        icon5 = QIcon()
+        icon5.addFile(u":/depto/Oeil2.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Buscar.setIcon(icon5)
+        self.action_Inicio = QAction(FrmDepto)
+        self.action_Inicio.setObjectName(u"action_Inicio")
+        icon6 = QIcon()
+        icon6.addFile(u":/depto/first.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Inicio.setIcon(icon6)
+        self.action_Anterior = QAction(FrmDepto)
+        self.action_Anterior.setObjectName(u"action_Anterior")
+        icon7 = QIcon()
+        icon7.addFile(u":/depto/prior.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Anterior.setIcon(icon7)
+        self.action_Proximo = QAction(FrmDepto)
+        self.action_Proximo.setObjectName(u"action_Proximo")
+        icon8 = QIcon()
+        icon8.addFile(u":/depto/next.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Proximo.setIcon(icon8)
+        self.action_Fim = QAction(FrmDepto)
+        self.action_Fim.setObjectName(u"action_Fim")
+        icon9 = QIcon()
+        icon9.addFile(u":/depto/last.bmp", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Fim.setIcon(icon9)
+        self.action_Sair = QAction(FrmDepto)
+        self.action_Sair.setObjectName(u"action_Sair")
+        icon10 = QIcon()
+        icon10.addFile(u":/depto/CLOSE1.BMP", QSize(), QIcon.Normal, QIcon.Off)
+        self.action_Sair.setIcon(icon10)
+        self.centralwidget = QWidget(FrmDepto)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.abas = QTabWidget(self.centralwidget)
+        self.abas.setObjectName(u"abas")
+        self.abas.setGeometry(QRect(0, 0, 761, 461))
+        font = QFont()
+        font.setPointSize(11)
+        self.abas.setFont(font)
+        self.tabCadastro = QWidget()
+        self.tabCadastro.setObjectName(u"tabCadastro")
+        self.layoutWidget = QWidget(self.tabCadastro)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(0, 10, 360, 207))
+        self.gridLayout_2 = QGridLayout(self.layoutWidget)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout = QGridLayout()
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.label_2 = QLabel(self.layoutWidget)
+        self.label_2.setObjectName(u"label_2")
+
+        self.gridLayout.addWidget(self.label_2, 0, 0, 1, 1)
+
+        self.Name_Prod = QLineEdit(self.layoutWidget)
+        self.Name_Prod.setObjectName(u"Name_Prod")
+        self.Name_Prod.setMaxLength(200)
+
+        self.gridLayout.addWidget(self.Name_Prod, 0, 1, 1, 1)
+
+        self.label_3 = QLabel(self.layoutWidget)
+        self.label_3.setObjectName(u"label_3")
+
+        self.gridLayout.addWidget(self.label_3, 1, 0, 1, 1)
+
+        self.IMG_Prod = QLineEdit(self.layoutWidget)
+        self.IMG_Prod.setObjectName(u"IMG_Prod")
+        self.IMG_Prod.setMaxLength(10000)
+
+        self.gridLayout.addWidget(self.IMG_Prod, 2, 1, 1, 1)
+
+        self.label_4 = QLabel(self.layoutWidget)
+        self.label_4.setObjectName(u"label_4")
+
+        self.gridLayout.addWidget(self.label_4, 2, 0, 1, 1)
+
+        self.Valor_Prod = QDoubleSpinBox(self.layoutWidget)
+        self.Valor_Prod.setObjectName(u"Valor_Prod")
+        self.Valor_Prod.setDecimals(2)
+        self.Valor_Prod.setMinimum(0.000000000000000)
+        self.Valor_Prod.setMaximum(1000000.000000000000000)
+
+        self.gridLayout.addWidget(self.Valor_Prod, 1, 1, 1, 1)
+
+
+        self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 2)
+
+        self.label_5 = QLabel(self.layoutWidget)
+        self.label_5.setObjectName(u"label_5")
+
+        self.gridLayout_2.addWidget(self.label_5, 1, 0, 1, 1)
+
+        self.Descr_Prod = QLineEdit(self.layoutWidget)
+        self.Descr_Prod.setObjectName(u"Descr_Prod")
+        self.Descr_Prod.setMaxLength(10000)
+
+        self.gridLayout_2.addWidget(self.Descr_Prod, 1, 1, 1, 1)
+
+        self.label_6 = QLabel(self.layoutWidget)
+        self.label_6.setObjectName(u"label_6")
+
+        self.gridLayout_2.addWidget(self.label_6, 2, 0, 1, 1)
+
+        self.CAT_Prod = QSpinBox(self.layoutWidget)
+        self.CAT_Prod.setObjectName(u"CAT_Prod")
+        self.CAT_Prod.setMinimum(1)
+
+        self.gridLayout_2.addWidget(self.CAT_Prod, 2, 1, 1, 1)
+
+        self.widget = QWidget(self.tabCadastro)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(0, 220, 361, 31))
+        self.gridLayout_3 = QGridLayout(self.widget)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.ID_PRods = QLabel(self.widget)
+        self.ID_PRods.setObjectName(u"ID_PRods")
+        font1 = QFont()
+        font1.setPointSize(12)
+        self.ID_PRods.setFont(font1)
+
+        self.gridLayout_3.addWidget(self.ID_PRods, 0, 0, 1, 1)
+
+        self.ID_Prod = QSpinBox(self.widget)
+        self.ID_Prod.setObjectName(u"ID_Prod")
+        self.ID_Prod.setMinimum(1)
+        self.ID_Prod.setMaximum(1000)
+
+        self.gridLayout_3.addWidget(self.ID_Prod, 0, 1, 1, 1)
+
+        icon11 = QIcon()
+        icon11.addFile(u":/depto/COPY.BMP", QSize(), QIcon.Normal, QIcon.Off)
+        self.abas.addTab(self.tabCadastro, icon11, "")
+        self.tabListagem = QWidget()
+        self.tabListagem.setObjectName(u"tabListagem")
+        self.gridDepto = QTableWidget(self.tabListagem)
+        if (self.gridDepto.columnCount() < 6):
+            self.gridDepto.setColumnCount(6)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.gridDepto.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.gridDepto.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.gridDepto.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        self.gridDepto.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        self.gridDepto.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        self.gridDepto.setHorizontalHeaderItem(5, __qtablewidgetitem5)
+        self.gridDepto.setObjectName(u"gridDepto")
+        self.gridDepto.setGeometry(QRect(0, 0, 481, 261))
+        icon12 = QIcon()
+        icon12.addFile(u":/depto/WINPREV.BMP", QSize(), QIcon.Normal, QIcon.Off)
+        self.abas.addTab(self.tabListagem, icon12, "")
+        FrmDepto.setCentralWidget(self.centralwidget)
+        self.menubar = QMenuBar(FrmDepto)
+        self.menubar.setObjectName(u"menubar")
+        self.menubar.setGeometry(QRect(0, 0, 772, 21))
+        self.menuCadastro = QMenu(self.menubar)
+        self.menuCadastro.setObjectName(u"menuCadastro")
+        self.menuListagem = QMenu(self.menubar)
+        self.menuListagem.setObjectName(u"menuListagem")
+        self.menuSobre = QMenu(self.menubar)
+        self.menuSobre.setObjectName(u"menuSobre")
+        self.menuSair = QMenu(self.menubar)
+        self.menuSair.setObjectName(u"menuSair")
+        FrmDepto.setMenuBar(self.menubar)
+        self.statusbar = QStatusBar(FrmDepto)
+        self.statusbar.setObjectName(u"statusbar")
+        FrmDepto.setStatusBar(self.statusbar)
+        self.toolBar = QToolBar(FrmDepto)
+        self.toolBar.setObjectName(u"toolBar")
+        self.toolBar.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        FrmDepto.addToolBar(Qt.ToolBarArea.TopToolBarArea, self.toolBar)
+
+        self.menubar.addAction(self.menuCadastro.menuAction())
+        self.menubar.addAction(self.menuListagem.menuAction())
+        self.menubar.addAction(self.menuSobre.menuAction())
+        self.menubar.addAction(self.menuSair.menuAction())
+        self.menuCadastro.addAction(self.actionConex_o)
+        self.menuCadastro.addSeparator()
+        self.menuCadastro.addAction(self.actionSair)
+        self.toolBar.addAction(self.action_Inicio)
+        self.toolBar.addAction(self.action_Anterior)
+        self.toolBar.addAction(self.action_Proximo)
+        self.toolBar.addAction(self.action_Fim)
+        self.toolBar.addSeparator()
+        self.toolBar.addAction(self.action_Buscar)
+        self.toolBar.addAction(self.action_Novo)
+        self.toolBar.addSeparator()
+        self.toolBar.addAction(self.action_Editar)
+        self.toolBar.addAction(self.action_Salvar)
+        self.toolBar.addAction(self.action_Cancelar)
+        self.toolBar.addAction(self.action_Excluir)
+        self.toolBar.addSeparator()
+        self.toolBar.addAction(self.action_Sair)
+
+        self.retranslateUi(FrmDepto)
+
+        self.abas.setCurrentIndex(0)
+
+
+        QMetaObject.connectSlotsByName(FrmDepto)
+    # setupUi
+
+    def retranslateUi(self, FrmDepto):
+        FrmDepto.setWindowTitle(QCoreApplication.translate("FrmDepto", u"Cadastro de Departamentos", None))
+        self.actionConex_o.setText(QCoreApplication.translate("FrmDepto", u"Conex\u00e3o", None))
+        self.actionSair.setText(QCoreApplication.translate("FrmDepto", u"Sair", None))
+        self.action_Novo.setText(QCoreApplication.translate("FrmDepto", u"&Novo", None))
+#if QT_CONFIG(tooltip)
+        self.action_Novo.setToolTip(QCoreApplication.translate("FrmDepto", u"Incluir novo registro", None))
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(shortcut)
+        self.action_Novo.setShortcut(QCoreApplication.translate("FrmDepto", u"Ctrl++", None))
+#endif // QT_CONFIG(shortcut)
+        self.action_Editar.setText(QCoreApplication.translate("FrmDepto", u"&Editar", None))
+#if QT_CONFIG(tooltip)
+        self.action_Editar.setToolTip(QCoreApplication.translate("FrmDepto", u"Altera dados do registro em exibi\u00e7\u00e3o", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Salvar.setText(QCoreApplication.translate("FrmDepto", u"&Salvar", None))
+#if QT_CONFIG(tooltip)
+        self.action_Salvar.setToolTip(QCoreApplication.translate("FrmDepto", u"Grava o registro atual no banco de dados", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Excluir.setText(QCoreApplication.translate("FrmDepto", u"E&xcluir", None))
+#if QT_CONFIG(tooltip)
+        self.action_Excluir.setToolTip(QCoreApplication.translate("FrmDepto", u"Exclui o registro cujo c\u00f3digo foi digitado", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Cancelar.setText(QCoreApplication.translate("FrmDepto", u"&Cancelar", None))
+#if QT_CONFIG(tooltip)
+        self.action_Cancelar.setToolTip(QCoreApplication.translate("FrmDepto", u"Cancela a opera\u00e7\u00e3o atualmente em execu\u00e7\u00e3o", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Buscar.setText(QCoreApplication.translate("FrmDepto", u"&Buscar", None))
+#if QT_CONFIG(tooltip)
+        self.action_Buscar.setToolTip(QCoreApplication.translate("FrmDepto", u"Busca o registro cujo c\u00f3digo foi digitado e o exibe", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Inicio.setText(QCoreApplication.translate("FrmDepto", u"&In\u00edcio", None))
+#if QT_CONFIG(tooltip)
+        self.action_Inicio.setToolTip(QCoreApplication.translate("FrmDepto", u"Posiciona visualiza\u00e7\u00e3o no primeiro registro e o exibe", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Anterior.setText(QCoreApplication.translate("FrmDepto", u"&Anterior", None))
+#if QT_CONFIG(tooltip)
+        self.action_Anterior.setToolTip(QCoreApplication.translate("FrmDepto", u"Posiciona visualiza\u00e7\u00e3o no registro anterior ao atualmente exibido", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Proximo.setText(QCoreApplication.translate("FrmDepto", u"&Pr\u00f3ximo", None))
+#if QT_CONFIG(tooltip)
+        self.action_Proximo.setToolTip(QCoreApplication.translate("FrmDepto", u"Posiciona visualiza\u00e7\u00e3o no registro seguinte ao atual", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Fim.setText(QCoreApplication.translate("FrmDepto", u"&Fim", None))
+#if QT_CONFIG(tooltip)
+        self.action_Fim.setToolTip(QCoreApplication.translate("FrmDepto", u"Posiciona visualiza\u00e7\u00e3o no \u00faltimo registro e o exibe", None))
+#endif // QT_CONFIG(tooltip)
+        self.action_Sair.setText(QCoreApplication.translate("FrmDepto", u"Sai&r", None))
+#if QT_CONFIG(tooltip)
+        self.action_Sair.setToolTip(QCoreApplication.translate("FrmDepto", u"Fecha a conex\u00e3o, salva dados e fecha o formul\u00e1rio", None))
+#endif // QT_CONFIG(tooltip)
+        self.label_2.setText(QCoreApplication.translate("FrmDepto", u"Nome:", None))
+        self.label_3.setText(QCoreApplication.translate("FrmDepto", u"Valor Do Produto", None))
+        self.label_4.setText(QCoreApplication.translate("FrmDepto", u"Imagem Do Produto", None))
+        self.label_5.setText(QCoreApplication.translate("FrmDepto", u"Descri\u00e7\u00e3o", None))
+        self.label_6.setText(QCoreApplication.translate("FrmDepto", u"Categoria", None))
+        self.ID_PRods.setText(QCoreApplication.translate("FrmDepto", u"Id", None))
+        self.abas.setTabText(self.abas.indexOf(self.tabCadastro), QCoreApplication.translate("FrmDepto", u"Cadastro", None))
+#if QT_CONFIG(tooltip)
+        self.abas.setTabToolTip(self.abas.indexOf(self.tabCadastro), QCoreApplication.translate("FrmDepto", u"Manuten\u00e7\u00e3o de Dados de Departamento", None))
+#endif // QT_CONFIG(tooltip)
+        ___qtablewidgetitem = self.gridDepto.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("FrmDepto", u"ID_Prod", None));
+        ___qtablewidgetitem1 = self.gridDepto.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("FrmDepto", u"Nome", None));
+        ___qtablewidgetitem2 = self.gridDepto.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("FrmDepto", u"Valor", None));
+        ___qtablewidgetitem3 = self.gridDepto.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("FrmDepto", u"Imagem", None));
+        ___qtablewidgetitem4 = self.gridDepto.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("FrmDepto", u"Descri\u00e7\u00e3o", None));
+        ___qtablewidgetitem5 = self.gridDepto.horizontalHeaderItem(5)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("FrmDepto", u"Categoria", None));
+        self.abas.setTabText(self.abas.indexOf(self.tabListagem), QCoreApplication.translate("FrmDepto", u"Listagem", None))
+#if QT_CONFIG(tooltip)
+        self.abas.setTabToolTip(self.abas.indexOf(self.tabListagem), QCoreApplication.translate("FrmDepto", u"Exibe lista de departamentos cadastrados", None))
+#endif // QT_CONFIG(tooltip)
+        self.menuCadastro.setTitle(QCoreApplication.translate("FrmDepto", u"Cadastro", None))
+        self.menuListagem.setTitle(QCoreApplication.translate("FrmDepto", u"Listagem", None))
+        self.menuSobre.setTitle(QCoreApplication.translate("FrmDepto", u"Sobre", None))
+        self.menuSair.setTitle(QCoreApplication.translate("FrmDepto", u"Sair", None))
+        self.toolBar.setWindowTitle(QCoreApplication.translate("FrmDepto", u"toolBar", None))
+    # retranslateUi
+

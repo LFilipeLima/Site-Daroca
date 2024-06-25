@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(180deg, #FFF 0%, #000 100%);
+        }
+        #Formulario{
+            width: 50%;
+            height: 100%;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #Formulario form{
+            display: flex;
+            flex-direction: column;
+        }
+        #Formulario form input{
+            background-color: rgb(255, 255, 255);    
+            border: none;
+            margin: 0.2rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        #Formulario form input:focus{
+            outline: none;
+        }
+        #criar{
+            border: none;
+            padding: 5px 20px;
+            border-radius: 99999999999999px;
+            color: white;
+            background-color: black;
+        }
+        #voltar{
+            background-color: transparent;
+            border: none;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+            margin-left: 50px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="Formulario">
+        <a href="/Pagina inicial/DaRoca.html"  id="voltar"> Voltar</a>
+        <h1>Cadastre-se</h1>
+        <form>
+            <p>Nome:</p>
+            <input type="text" placeholder="Nome completo"/>
+            <p>Email:</p>
+            <input type="email" placeholder="email"/>
+            <p>Senha:</p>
+            <input type="password" placeholder="senha"/>
+            <p>Repita sua senha:</p>
+            <input type="password" placeholder="senha"/>
+            <p>Já possui conta? 
+                <a href="/Formulario/Entrar.html">Clique aqui.</a></p>   
+        </form>
+        <button type="submit" id="criar" onclick="window.location.href='/Formulario/Entrar.html'">Criar</button>
+    </div>
+</body>
+</html>

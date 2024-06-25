@@ -1,0 +1,127 @@
+.NomeDaEmpresa{
+    width: 160px;
+    height: 89px;
+
+}
+.Logo{
+    width: 100px;
+    height: 89px;
+    flex-shrink: 0;
+}
+.fontePadrão{
+    text-align: center;
+    color: rgb(255, 255, 255) !important;
+    font-size: 40px;
+
+    
+}
+.BotaoDeCadastro{
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 10px;
+}
+#Botao{
+    justify-content: end;
+    margin-right: 20px;
+    padding:10px;
+    
+}
+#empresa{
+    display: flex;
+    justify-content: start;
+
+   
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header{
+    background-color: rgb(4, 84, 5);
+    
+}
+body{
+    background: orange !important;
+}
+
+*{margin: 0px;}
+.Produto{
+    border: solid black 3px;
+    width: 275px;
+    margin-left: 20px;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.Produto:hover{
+    border: solid gray 3px;
+}
+#Categoria{
+    display: flex;
+    justify-content: space-around;
+    
+    
+   
+}
+#Produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    text-align: center;
+}
+.Botaocategoria{
+    display: flex;
+    justify-content: center;
+}
+.botaoCategoria{
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: solid black 3px;
+    margin-top: 4px;
+}
+.TodasAscategorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer{
+    background-color: rgb(4, 84, 5);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:515px;
+}
+#Informacoes{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.contatoEreclamacoes{
+    font-size: 20px;
+    display: flex;
+    color: white;
+
+}
+#botaoCarrinho{
+    border-radius: 10px;
+    background-color: rgb(66, 66, 177);
+    display: flex;
+   
+}
+

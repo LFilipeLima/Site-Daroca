@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalogo</title>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+<header>
+    <nav>
+      <ul>
+        <li >
+          <div id="empresa">
+            <a href="/Pagina inicial/DaRoca.html"> <img class="NomeDaEmpresa" src="/Pagina inicial/Daroça.png" alt="" ></a>
+            <img class="Logo" src="/Pagina inicial/Logo.png" alt="">
+          </div>
+        <div id="Botao">
+          <button class="BotaoDeCadastro" href="/Formulario/Cadastrar.html">Cadastre-se</button>
+          <button class="BotaoDeCadastro" href="/Formulario/Entrar.html">Entrar</button>
+        </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+<body onload="BuscaProd()">
+  
+ 
+  <div  class="TodasAscategorias"id="Verduras">
+  </div>
+    <div id="Categoria">
+     <button class="botaoCategoria" onclick="BuscaProd(1)">Ver  Verduras</button>
+     <button class="botaoCategoria" onclick="BuscaProd(2)">Ver Legumes</button>
+     <button class="botaoCategoria" onclick="BuscaProd(3)">Ver  Frutas</button>
+    </div>
+
+    <div id="Categoria">    
+    <div id="Produtos">
+
+    </div>
+
+     
+   
+    </div>
+ 
+
+
+<script>
+
+
+function BuscaProd(categoria){
+        fetch('http://localhost:3000/produtos') /*Funçao que busca coisas externas, nesse caso é a api*/
+            .then(resposta => {
+                return resposta.json();
+            })
+            
+            .then((dados) => {
+                console.log(dados)
+                paginaProd(dados,categoria)
+            })}
+
+function paginaProd(dados, categoria) {
+  let texto = "" ;
+  let prods = "<table>        <tr>          <th></th>          <th></th>          <th></th>        </tr> <tr>" ;
+  let contador = 0;
+  for (let i = 0; i < dados.length; i++) {
+    if (categoria === dados[i].categoria) {
+        texto=""
+        texto+='<td class="Produto">'
+      
+        texto+='<h1>'+dados[i].nome+'</h1>'
+        texto+= '<img src="/daroca-api/daroca-api/imagens/'+dados[i].imagem+'"'+  ' alt="">'
+        texto+='<h1>Preço</h1>'
+        texto+='<h1>'+Number(dados[i].valor).toFixed(2)+'</h1>'   /*Arrendonda o valor decimal do preço em duas casas decimas*/
+        texto+='<div id="Produtos">'
+        texto+="<button id='botaoCarrinho' >Adicionar ao Carrinho</button>" /*Deixa o valor do produto com duas casas decimaiss*/
+        texto+='</div>'
+        texto+='</td>'
+       
+        contador++;
+        
+    if (contador % 3 == 0) {
+    prods+=texto
+    prods += "</tr>";
+    prods+="<tr>"
+       
+    }
+    else{
+      prods+=texto
+  
+    }
+  }}
+  prods += "</table>";
+  document.getElementById("Produtos").innerHTML = prods;}
+
+
+
+</script>
+<footer>
+    <h1 id="Informacoes">R. Culto à Ciência, 177 - Centro, Campinas - SP, 13020-060,Brasil</h1>
+    <div style="display: flex;">
+      <p style="margin-inline:50px" class="contatoEreclamacoes">Contate-nos:<a href="" class="contatoEreclamacoes"> 98765-1234</a></p>
+      <p style="margin-inline:50px" ><a href="/Pagina inicial/Reclame.html" class="contatoEreclamacoes">Reclame-aqui</a></p>
+      <p style="margin-inline:50px"><a href="/Pagina inicial/Reclame.html" class="contatoEreclamacoes">Dê sugestões</a></p>
+      <p ><a href="/Pagina inicial/Reclame.html" class="contatoEreclamacoes">Fazer comentarios</a></p>
+    </div>
+    
+
+</footer>
+</body>
+</html>

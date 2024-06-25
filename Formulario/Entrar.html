@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(180deg, #FFF 0%, #000 100%);
+        }
+        #Formulario{
+            width: 50%;
+            height: 100%;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #Formulario form{
+            display: flex;
+            flex-direction: column;
+        }
+        #Formulario form input{
+            background-color: rgb(255, 255, 255);    
+            border: none;
+            margin: 0.2rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            width: 20rem;
+        }
+
+        #criar{
+            border: none;
+            padding: 5px 20px;
+            border-radius: 99px;
+            color: white;
+            background-color: black;
+            margin-top: 20px;
+            
+        }
+        #voltar{
+            background-color: transparent;
+            border: none;
+            margin-top: 20px;
+            margin-left: 50px;
+            text-decoration: none;
+            color: black;
+            margin-right: 80%;
+        }
+        #EsqueceuSenha{
+            text-decoration: none;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Formulario">
+        <a href="/Catalogo/catalogo.html" id="voltar" >< Voltar</a>
+        <div style="margin-top: 200px;">
+                <h1 style="text-align:center">Entrar</h1>
+            <form>
+                <p>Email:</p>
+                <input type="email" placeholder="email"/>
+                <p>Senha:</p>
+                <input type="password" placeholder="senha"/>
+                
+            </form>
+            <a href="" id="EsqueceuSenha">Esqueci minha senha</a>  
+            <button id="criar" onclick="window.location.href='/Catalogo/catalogo.html'">Entrar<button>
+        </div>
+        
+    </div>
+</body>
+</html>

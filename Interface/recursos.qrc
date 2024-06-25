@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="depto">
+    <file>abort.bmp</file>
+    <file>about.bmp</file>
+    <file>Add.bmp</file>
+    <file>CLOSE1.BMP</file>
+    <file>COPY.BMP</file>
+    <file>FIND.BMP</file>
+    <file>first.bmp</file>
+    <file>last.bmp</file>
+    <file>Minus.bmp</file>
+    <file>next.bmp</file>
+    <file>Oeil2.bmp</file>
+    <file>PRINTER5.BMP</file>
+    <file>prior.bmp</file>
+    <file>REDO.BMP</file>
+    <file>Save.bmp</file>
+    <file>UNDO.BMP</file>
+    <file>WINNEXT.BMP</file>
+    <file>WINPREV.BMP</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,120 @@
+.NomeDaEmpresa{
+    width: 160px;
+    height: 89px;
+
+}
+.Logo{
+    width: 100px;
+    height: 89px;
+    flex-shrink: 0;
+}
+.fontePadrão{
+    text-align: center;
+    color: rgb(255, 255, 255) !important;
+    font-size: 40px;
+
+    
+}
+.BotaoDeCadastro{
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 10px;
+}
+#Botao{
+    justify-content: end;
+    margin-right: 20px;
+    padding:10px;
+    margin-top: 20px;
+    
+}
+#empresa{
+    display: flex;
+    justify-content: start;
+
+   
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header{
+    background-color: rgb(4, 84, 5);
+
+    
+}
+body{
+    background: orange !important;
+}
+*{margin: 0px;}
+
+#imagem1{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+
+}
+#apresentacao2{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    
+}
+#imagem2{
+    height: 600px;
+}
+#texto2{
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+}
+#apresentacao3{
+    display: flex;
+    justify-content: space-around reverse;
+}
+#imagem3{
+    height: 400px;
+}
+#texto3{
+    margin-left: 200px;
+    font-size: 600px;
+
+}
+#botaoCatalogo{
+    background-color: red;
+    color:white;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 10px;
+
+}
+#opcaoNavega{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(4, 84, 5);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    }
+#Informacoes{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.contatoEreclamacoes{
+    font-size: 20px;
+    display: flex;
+    color: white;
+
+}
